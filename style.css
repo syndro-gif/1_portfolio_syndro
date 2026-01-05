@@ -1,0 +1,325 @@
+/* ===== 基本設定 ===== */
+body {
+  margin: 0;<a href = "index.html"></a>
+  padding: 0;
+  background-color: #FFF4EE; /* ほんのり暖かい白ピーチ */
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  color: #6F6A68;/* 赤みのあるグレー */
+	line-height: 1.8;
+}
+	
+span {
+margin-right: 2em;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.section {
+  max-width: 950px;
+  margin: 190px;
+  padding: 40px 20px;
+}
+
+@font-face {
+  font-family: "Crayon";
+  src: url("../fonts/CrayonFont.ttf") format("truetype");
+}
+/* ===== HEADER ===== */
+
+.site-header {
+  background-color: #CFEEDB;
+}
+
+.header-inner {
+  align-items: center;   /* 縦中央 */
+  justify-content: flex-start; /* 左寄せ */
+  gap: 32px;             /* タイトルとボタンの間隔 */
+  padding: 40px 40px;
+}
+
+.site-title {
+  font-size: 32px;
+  margin: 0;
+  color: #444;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px; /* ボタン同士の間 */
+}
+
+.nav-button {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  color: #444;
+	background-color: #8BE6A3; /* ミントグリーン */
+}
+
+/* 上の PORTFOLIO */
+.header-title {
+  font-size: 100px;
+ color: #D65A45;/* 濃いコーラル */
+}
+
+/* 下のボタン3つ */
+.header-nav {
+  justify-content: center;
+  gap: 250px;
+}
+
+/* ボタン全体 */
+.nav-item {
+  text-decoration: none;
+  color: #6F6A68;
+  flex-direction: column;
+  align-items: center;
+	width:200px;
+	height:auto;
+  gap: 24px;
+}
+.profile {
+  margin-top: 120px; /* 好きなだけ広げてOK */
+}
+/* ===== HEADER終了 ===== */
+
+
+/* ===== ボタン ===== */
+.img-btn img {
+  width: 200px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.img-btn img:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* ===== ボタン ===== */
+h1 {
+margin-top: 110px !important;
+  color: #D65A45;/* 濃いコーラル */
+  font-size: 100px;
+	text-decoration: none;
+}
+
+h2 {
+  color: #D65A45;/* 濃いコーラル */
+  font-size: 30px;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+ul li a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px;
+	letter-spacing: 3px;
+	 font-family: "Crayon", sans-serif;
+}
+
+.header h2 {
+	margin: 0;
+	align-items: center; /* 上下中央に揃える */
+	  display: flex; /* flexboxを作る */
+  font-size: 30px;
+	letter-spacing: 3px;
+}
+
+
+/* ===== PROFILE ===== */
+
+.profile {
+  margin: 0 auto;      /* ← これだけで中央 */
+}
+padding: 20px;
+margin-bottom: 30px;z /* 左寄せはこの幅で統一*/
+
+.profile {
+  max-width: 600px;
+}
+
+.profile-item {
+  margin-bottom: 40px; /* 各項目の間隔 */
+}
+
+.profile-item h3 {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.profile-item p {
+  margin: 0;
+  line-height: 1.8;
+}
+.profile {
+  max-width: 900px;
+}
+
+/* 上段だけ横並び */
+.profile-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.profile-basic {
+  flex: 1;
+}
+
+.profile-image {
+
+width: 150pt;
+height: auto; 
+  object-fit: cover;
+}
+
+/* テキスト微調整 */
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profile-basic p {
+  margin: 0 0 6px 0;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;   /* 中央寄せ */
+  gap: 2cm;                  /* 画像同士の間隔 */
+}
+
+.icon-row img {
+  width: 50px;
+  aspect-ratio: 1 / 1;       /* 正方形 */
+  object-fit: contain;       /* 透過PNG向け */
+  display: block;
+}
+
+
+
+
+/* ===== PROJECTS ===== */
+section projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+		border-left: 6px solid #8BE6A3;/* ボックス左のアクセントカラー */
+}
+
+.img-wrap {
+  max-width: 800px;     /* お好きな幅に調整可 */
+  margin: 0 auto;       /* 中央揃え */
+}
+
+.img-wrap img {
+  width: 50%;          /* 横幅いっぱいに */
+  height: auto;         /* 高さは自動調整 → 縦横比が崩れない！ */
+  display: block;       /* 余白防止 */
+}
+
+
+
+
+/* ===== ILLUSTRATIONS ===== */
+section illust {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.illust-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 780px) {
+  .profile-content {
+    flex-direction: column;
+  }
+  .illust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== HOMEボタン===== */
+
+.home-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #D65A45; /* コーラルピンク */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px; /* 丸み強め */
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  transition: all 0.25s ease;
+	box-shadow: 0 6px 15px rgba(214, 90, 69, 0.35);
+	margin-top: 3cm;
+	margin-bottom: 3cm;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(214, 90, 69, 0.45);
+  opacity: 0.95;
+}
+/* トップ行きボタン*/
+.to-top {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height:  50px;
+  background: #D65A45; /* コーラルピンク */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 6px 15px rgba(214, 90, 69, 0.35);
+  transition: all 0.3s ease;
+}
+/* ボトム余白サイズ */
+
+.bottom-space {
+  margin-bottom: 10cm;
+}
